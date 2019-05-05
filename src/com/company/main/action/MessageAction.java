@@ -12,7 +12,6 @@ public class MessageAction implements Action {
         Gson gson = new Gson();
         SendMessage sendMessage = gson.fromJson(request, SendMessage.class);
         MessageResponse response = new MessageResponse("message", sendMessage.getMessage(), sendMessage.getLogin());
-        //Server.sendMessageAll(gson.toJson(response));
         return gson.toJson(response);
     }
 }

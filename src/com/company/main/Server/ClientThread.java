@@ -36,8 +36,6 @@ public class ClientThread implements Runnable {
                 else {
                     sendMessageAll(response);
                 }
-               // out.writeUTF(response);
-               // out.flush();
             }
             client.close();
         } catch (IOException e) {
